@@ -30,9 +30,18 @@ useEffect(()=>{
 
   return (
     <div className="App">
-      <h1 className="Header">Characters</h1>
+    <h1 className="Header">Characters</h1>   
+    {data.map(( item, index)=>{
+      
+      return (
+           <Character data={data[index]} />
+           
+      );
+       
+    })}
+      
     </div>
+    
   );
 }
-
 export default App;
